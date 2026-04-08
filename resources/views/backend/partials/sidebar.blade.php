@@ -2,7 +2,7 @@
     <div class="nk-sidebar-element nk-sidebar-head">
         <div class="nk-sidebar-brand">
             <a href="/admin" class="logo-link nk-sidebar-logo">
-                <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/vi/7/75/Vinmart_logo_sieu_thi.png"  alt="logo">
+                <img class="logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgUeoTAQrLw_J-dXe80DsEe3mVsW0YqN4QUg&s"  alt="logo">
                 
             </a>
         </div>
