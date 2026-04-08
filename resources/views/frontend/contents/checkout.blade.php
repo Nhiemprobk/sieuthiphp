@@ -50,15 +50,17 @@
 
 
                                     <div class="col-lg-12 col-md-12">
-                                        <div class="billing-info mb-20">
-                                            <label>Địa chỉ email
-                                                <abbr class="required" title="required">*</abbr></label>
-                                            <input type="text" name="Email" />
-                                            @error('Email')
-                                                <span class="text-danger">{{ $message }}</span>
-                                            @enderror
-                                        </div>
-                                    </div>
+    <div class="billing-info mb-20">
+        <label>Địa chỉ email
+            <abbr class="required" title="required">*</abbr>
+        </label>
+        <input type="email" name="Email" value="{{ Auth::user()->email }}" readonly />
+        
+        @error('Email')
+            <span class="text-danger">{{ $message }}</span>
+        @enderror
+    </div>
+</div>
                                 </div>
                                 <div class="additional-info-wrap">
                                     <label>Ghi chú</label>
