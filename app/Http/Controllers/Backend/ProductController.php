@@ -14,8 +14,13 @@ class ProductController extends Controller
 {
     public function index()
     {
-        $products = Product::paginate(5);
-        $categories = ProductCategory::all();
+        // Đã thêm các relationships cần load vào trong with()
+        $products = Product::with(['product_category', 'promotion'])
+            ->select('id', 'name', 'thumbnail', 'price', 'qty', 'usage', 'product_category_id', 'promotion_id')
+            ->paginate(5);
+
+        $categories = ProductCategory::select('id', 'name')->get();
+        
         return view('backend.contents.product.index', compact('products', 'categories'));
     }
     public function create()
