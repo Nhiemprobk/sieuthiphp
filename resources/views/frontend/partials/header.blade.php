@@ -11,7 +11,7 @@
         .input-search {
             height: 50px;
             width: 50px;
-            border: 1px solid #e74c3c;
+            border: 1px solid #c61c09;
             padding: 10px;
             font-size: 15px;
             letter-spacing: 2px;
@@ -71,6 +71,39 @@
         .autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
         .autocomplete-group { padding: 2px 5px; }
         .autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+        
+        /* Styling for main menu navigation links */
+        .main-menu {
+            margin-left: 100px;
+        }
+        
+        .main-menu nav ul li a {
+            color: #e74c3c !important;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            padding-bottom: 5px;
+            font-size: 16px;
+        }
+        
+        .main-menu nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #f1c40f;
+            transition: width 0.3s ease-in-out;
+        }
+        
+        .main-menu nav ul li a:hover {
+            color: #f1c40f !important;
+            transform: scale(1.05);
+        }
+        
+        .main-menu nav ul li a:hover::after {
+            width: 100%;
+        }
     </style>
 
 <header class="header-area header-responsive-padding header-height-1">
@@ -79,7 +112,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-2 col-md-6 col-6">
                     <div class="logo">
-                        <a href="/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZh8tGvlN57C33YS7c_xH1mlrhS2GSJ3uICw&s"
+                        <a href="/"><img src="https://cdn.bio.link/uploads/profile_pictures/2023-10-06/DdhFAEziotQAoGat26nTwMLOBbH57WU3.png"
                                 alt="logo" /></a>
                     </div>
                 </div>
