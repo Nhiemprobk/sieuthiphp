@@ -7,7 +7,7 @@
               <div class="footer-widget footer-about mb-40">
                 <div class="footer-logo">
                   <a href="index.html"
-                    ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZh8tGvlN57C33YS7c_xH1mlrhS2GSJ3uICw&s" alt="logo"
+                    ><img src="https://cdn.bio.link/uploads/profile_pictures/2023-10-06/DdhFAEziotQAoGat26nTwMLOBbH57WU3.png" alt="logo"
                   /></a>
                 </div>
                 <p>
