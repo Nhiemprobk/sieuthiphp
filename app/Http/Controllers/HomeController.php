@@ -26,7 +26,9 @@ class HomeController extends Controller
     public function index()
     {
         $products = Cache::remember('homepage_products', 600, function () {
-            return Product::where('status', 1)->get();
+            return Product::with(['product_category', 'promotion'])
+                          ->where('status', 1)
+                          ->get();
         });
 
         return view('home', compact('products'));
