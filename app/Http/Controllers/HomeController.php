@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
+use App\Models\Product;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $products = Cache::remember('homepage_products', 600, function () {
+            return Product::where('status', 1)->get();
+        });
+
+        return view('home', compact('products'));
     }
 }
